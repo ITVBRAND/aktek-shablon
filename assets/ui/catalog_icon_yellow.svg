@@ -1,0 +1,22 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_11061">
+			<rect rx="0.000000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect rx="0.000000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_11061)">
+		<path d="M3.33 0L0.66 0C0.29 0 0 0.29 0 0.66L0 3.33C0 3.7 0.29 4 0.66 4L3.33 4C3.7 4 4 3.7 4 3.33L4 0.66C4 0.29 3.7 0 3.33 0Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M3.33 6L0.66 6C0.29 6 0 6.29 0 6.66L0 9.33C0 9.7 0.29 10 0.66 10L3.33 10C3.7 10 4 9.7 4 9.33L4 6.66C4 6.29 3.7 6 3.33 6Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M3.33 12L0.66 12C0.29 12 0 12.29 0 12.66L0 15.33C0 15.7 0.29 16 0.66 16L3.33 16C3.7 16 4 15.7 4 15.33L4 12.66C4 12.29 3.7 12 3.33 12Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M9.33 0L6.66 0C6.29 0 6 0.29 6 0.66L6 3.33C6 3.7 6.29 4 6.66 4L9.33 4C9.7 4 10 3.7 10 3.33L10 0.66C10 0.29 9.7 0 9.33 0Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M9.33 6L6.66 6C6.29 6 6 6.29 6 6.66L6 9.33C6 9.7 6.29 10 6.66 10L9.33 10C9.7 10 10 9.7 10 9.33L10 6.66C10 6.29 9.7 6 9.33 6Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M9.33 12L6.66 12C6.29 12 6 12.29 6 12.66L6 15.33C6 15.7 6.29 16 6.66 16L9.33 16C9.7 16 10 15.7 10 15.33L10 12.66C10 12.29 9.7 12 9.33 12Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M15.33 0L12.66 0C12.29 0 12 0.29 12 0.66L12 3.33C12 3.7 12.29 4 12.66 4L15.33 4C15.7 4 16 3.7 16 3.33L16 0.66C16 0.29 15.7 0 15.33 0Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M15.33 6L12.66 6C12.29 6 12 6.29 12 6.66L12 9.33C12 9.7 12.29 10 12.66 10L15.33 10C15.7 10 16 9.7 16 9.33L16 6.66C16 6.29 15.7 6 15.33 6Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M15.33 12L12.66 12C12.29 12 12 12.29 12 12.66L12 15.33C12 15.7 12.29 16 12.66 16L15.33 16C15.7 16 16 15.7 16 15.33L16 12.66C16 12.29 15.7 12 15.33 12Z" fill="#F7A711" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
