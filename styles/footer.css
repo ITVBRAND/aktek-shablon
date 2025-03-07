@@ -63,21 +63,6 @@
     gap: 10px;
 }
 
-.footer__circul {
-    position: var(--absolute);
-    top: 25%;
-    left: 25%;
-
-    width: 50%;
-    height: 50%;
-
-    filter: blur(300px);
-    background: rgb(247, 167, 17);
-    opacity: 0.15;
-
-    pointer-events: var(--none);
-}
-
 .footer__logo {
     margin: 32px 0;
 

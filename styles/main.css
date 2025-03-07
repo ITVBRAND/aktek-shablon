@@ -1,3 +1,9 @@
-.main {
+.hero {
     height: 100vh;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    background-color: var(--clr-dark);
 }

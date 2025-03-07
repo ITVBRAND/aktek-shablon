@@ -1,5 +1,13 @@
 /*header-default-style-start*/
 
+.header__default {
+    position: var(--absolute);
+    top: 0;
+    right: 0;
+
+    width: 100%;
+}
+
 .header__fixed {
     background-color: var(--clr-dark);
 }
@@ -106,6 +114,10 @@
 /*header-menu-catalog-start*/
 
 .header__catalog-menu {
+    position: var(--absolute);
+    top: 156px;
+    right: 0;
+
     opacity: 0;
 
     transform: translateY(-10px);
