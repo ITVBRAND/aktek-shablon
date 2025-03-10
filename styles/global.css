@@ -23,6 +23,8 @@
     --left: left;
     --wrap: wrap;
     --fixed: fixed;
+    --uppercase: uppercase;
+    --transform: transform;
 
     --index: calc(1vw + 1vh);
 
@@ -67,16 +69,67 @@ body {
 }
 
 h1 {
+    margin: 0;
+
     color: var(--clr-white);
 
-    font-size: 62px;
+    font-size: calc(var(--index) * 2.336);
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
+
+    will-change: var(--transform);
+}
+
+h2 {
+    margin: 0;
+
+    font-size: calc(var(--index) * 1.8);
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    will-change: var(--transform);
+}
+
+h4 {
+    margin: 0;
+
+    font-size: calc(var(--index) * .7);
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: var(--uppercase);
+
+    will-change: var(--transform);
+}
+
+h5 {
+    margin: 0;
+
+    font-size: calc(var(--index)* .7);
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+    will-change: var(--transform);
+}
+
+p {
+    margin: 0;
+
+    font-size: calc(var(--index) * .7);
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0%;
+
+    will-change: var(--transform);
 }
 
 a {
     text-decoration: var(--none);
+
+    will-change: var(--transform);
 }
 
 button {
@@ -84,6 +137,8 @@ button {
     background: var(--transparent);
     outline: var(--none);
     border: var(--none);
+
+    will-change: var(--transform);
 }
 
 /*default-style-end*/
@@ -94,6 +149,35 @@ button {
     margin: 0 auto;
     max-width: 75%;
     box-sizing: border-box;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section__article {
+    display: var(--flex);
+    flex-direction: var(--column);
+    gap: 20px;
+}
+
+.section__article-subtitle {
+    color: var(--clr-oracle);
+}
+
+.article__subtitle-center {
+    text-align: var(--center);
+}
+
+.section__article-subtitle::before {
+    content: '';
+
+    display: var(--block);
+
+    height: calc(var(--index) * .9);
+    width: calc(var(--index) * .9);
+
+    background: no-repeat url(../assets/ui/article_star.svg) center / cover;
 }
 
 .nav__link {
@@ -116,9 +200,10 @@ button {
 }
 
 .btn {
-    padding: 16px 30px;
+    /* padding: 16px 30px; */
+    padding: calc(var(--index) * .56) calc(var(--index) * 1.1);
 
-    font-size: 1em;
+    font-size: calc(var(--index) * .43);
     font-weight: 800;
     line-height: 16px;
     letter-spacing: 0%;
@@ -144,11 +229,11 @@ button {
 @media screen and (min-width: 1920px) {
 
     .nav__link {
-        font-size: 1.2em;
+        font-size: calc(var(--index) * .43);
     }
 
     .btn {
-        font-size: 1.2em;
+        font-size: calc(var(--index) * .43);
     }
     
 }
