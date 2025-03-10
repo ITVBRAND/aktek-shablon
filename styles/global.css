@@ -127,6 +127,7 @@ p {
 }
 
 a {
+    color: var(--clr-dark);
     text-decoration: var(--none);
 
     will-change: var(--transform);
@@ -274,6 +275,10 @@ button {
         line-height: 100%;
 
         text-align: var(--left);
+    }
+
+    h5 {
+        font-size: calc(var(--index)* 1.3);
     }
 
     .nav__link {

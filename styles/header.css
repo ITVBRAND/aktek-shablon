@@ -123,6 +123,8 @@
     transform: translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     display: var(--none);
+
+    z-index: 1;
 }
 
 .header__catalog-menu__fixed {
@@ -355,10 +357,9 @@
         justify-content: var(--flex-start);
 
         transform: translateX(100%);
+        transition: var(--transition);
 
         background-color: var(--clr-dark);
-        transform: translateX(100%);
-        transition: var(--transition);
     }
     
     .burger__submenu.active {

@@ -152,6 +152,15 @@
         </a>
     </nav>
 
+    <div class="burger__footer">
+        <a href="tel:+79185780884" class="nav__link">
+            +7 (918) 578-08-84
+        </a>
+        <button class="burger__btn">
+            Оставить заявку
+        </button>
+    </div>
+
     <!-- Подменю Каталог -->
     <div class="burger__submenu">
         <button class="submenu__back">Назад</button>
@@ -163,14 +172,6 @@
         <a href="#" class="nav__link submenu__line">Категория 3</a>
     </div>
 
-    <div class="burger__footer">
-        <a href="tel:+79185780884" class="nav__link">
-            +7 (918) 578-08-84
-        </a>
-        <button class="burger__btn">
-            Оставить заявку
-        </button>
-    </div>
 </div>
 
 <!--Burger menu-->
@@ -328,10 +329,15 @@
     <section class="section main__excursion">
         <div class="container">
             <div class="main__excursion-wrapper">
-                <article class="section__article">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/picture/excursion-mob.png">
+                    <img class="excursion__picture" src="assets/picture/excursion.png" alt="worker">
+                </picture>                  
+                <article class="section__article article__section-excursion">
                     <h4 class="section__article-subtitle article__subtitle-left">экскурсия</h4>
-                    <h2 class="section__article-title">Экскурсия на производстве “Актэк”</h2>
+                    <h2 class="section__article-title article__title-excursion">Экскурсия на производстве “Актэк”</h2>
                     <p class="section__article-text">Полный спектр продуктов и услуг в сфере порошковой окраски. Мы изготовили и запустили в работу более 300 цехов и линий порошковой окраски, среди которых уникальные проекты, не имеющие аналогов в России. Мы можем реализовать проект любой сложности!</p>
+                    <a href="#" class="btn btn__excursion">узнать подробнее</a>
                 </article>
             </div>
         </div>

@@ -184,6 +184,7 @@
     width: 100%;
 
     display: var(--flex);
+    justify-content: var(--center);
     align-items: var(--flex-start);
     gap: calc(var(--index)* .7);
 }
@@ -211,7 +212,12 @@
     width: calc(var(--index)* 2.2);
     height: calc(var(--index)* 2.2);
 
+    transition: var(--transition);
     background: no-repeat url(../assets/ui/services__arrow.svg) center / cover;
+}
+
+.services__item:hover::after {
+    background: no-repeat url(../assets/ui/services__arrow-yellow.svg) center / cover;
 }
 
 .services__item-title {
@@ -219,6 +225,53 @@
 }
 
 /*services ssection end*/
+
+/*excursion section start*/
+
+.main__excursion-wrapper {
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--space-between);
+}
+
+.excursion__picture {
+    max-width: calc(var(--index)* 25);
+
+    will-change: var(--transform);
+}
+
+.article__section-excursion {
+    max-width: 532px;
+}
+
+.btn__excursion {
+    margin-top: 70px;
+
+    max-width: 160px;
+
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 10px;
+}
+
+.btn__excursion::after {
+    content: '';
+
+    display: var(--block);
+
+    width: calc(var(--index)* .43);
+    height: calc(var(--index)* .43);
+
+    background: no-repeat url(../assets/ui/arrow.svg) center / cover;
+    transition: var(--transition);
+}
+
+.btn__excursion:hover::after {
+    transform: rotate(90deg);
+    background: no-repeat url(../assets/ui/arrow_yellow.svg) center / cover;
+}
+
+/*excursion section end*/
 
 @media screen and (max-width: 1024px) {
 
@@ -237,6 +290,16 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    /*global start*/
+
+    .section {
+        padding: 60px 0;
+    }
+
+    /*global end*/
+
+    /*services start*/
     
     .services__list {
         display: var(--grid);
@@ -248,6 +311,45 @@
 
         box-sizing: border-box;
     }
+
+    /*services end*/
+
+    /*excursion start*/
+
+    .main__excursion-wrapper {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .article__section-excursion {
+        max-width: 100%;
+
+        text-align: var(--center);
+        align-items: var(--center);
+    }
+
+    .article__title-excursion {
+        text-align: var(--center);
+    }
+
+    .btn__excursion {
+        margin: 0;
+        padding: 16px 30px;
+
+        max-width: 100%;
+    }
+
+    .btn__excursion::after {
+        height: 11px;
+        width: 11px;
+    }
+
+    .excursion__picture {
+        width: 100%;
+        object-fit: var(--cover);
+    }
+
+    /*excursion end*/
 
 }
 
@@ -271,5 +373,36 @@
     }
 
     /*hero section end*/
+
+    /*services start*/
+
+    .services__item {
+        height: calc(var(--index)* 20);
+    }
+
+    .section__article-center {
+        max-width: 100%;
+    }
+
+    .services__item-title {
+        max-width: 100%;
+    }
+
+    .section__article-subtitle::before {
+        height: 16px;
+        width: 16px;
+    }
+
+    .article__subtitle-center {
+        gap: 12px;
+    }
+
+    .section__article-subtitle {
+        max-width: 300px;
+
+        font-size: 12px;
+    }
+
+    /*services end*/
     
 }
