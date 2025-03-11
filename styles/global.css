@@ -153,6 +153,10 @@ button {
     will-change: var(--transform);
 }
 
+img {
+    pointer-events: var(--none);
+}
+
 /*default-style-end*/
 
 /*basic-class-style-start*/
@@ -295,6 +299,12 @@ button {
 
     .container {
         max-width: 90%;
+    }
+
+    .btn__arrow {
+        padding: 16px 30px;
+
+        font-size: 11px;
     }
 
 }
