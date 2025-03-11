@@ -25,6 +25,7 @@
     --fixed: fixed;
     --uppercase: uppercase;
     --transform: transform;
+    --inline-flex: inline-flex;
 
     --index: calc(1vw + 1vh);
 
@@ -40,7 +41,7 @@
 
 * {
     scrollbar-width: auto;
-    scrollbar-color: var(--clr-oracle) var(--clr-white);
+    scrollbar-color: var(--clr-oracle) var(--clr-dark);
 }
 
 *::-webkit-scrollbar {
@@ -90,6 +91,16 @@ h2 {
     letter-spacing: 0%;
 
     will-change: var(--transform);
+}
+
+h3 {
+    margin: 0;
+
+    /* font-size: 24px; */
+    font-size: calc(var(--index) * .86);
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
 }
 
 h4 {
@@ -201,7 +212,6 @@ button {
 }
 
 .btn {
-    /* padding: 16px 30px; */
     padding: calc(var(--index) * .56) calc(var(--index) * 1.1);
 
     font-size: calc(var(--index) * .43);
@@ -223,6 +233,28 @@ button {
 
 .clr__yellow {
     color: var(--clr-oracle);
+}
+
+.btn__arrow {
+    padding: calc(var(--index) * .56) calc(var(--index) * 1.1);
+
+    font-size: calc(var(--index) * .43);
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    display: var(--inline-flex);
+    align-items: var(--center);
+    gap: 12px;
+}
+
+.btn__arrow::after {
+    content: '';
+
+    display: var(--block);
+
+    transition: var(--transition);
 }
 
 /*basic-class-style-end*/
