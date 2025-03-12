@@ -598,6 +598,10 @@
     gap: 66px;
 }
 
+.work__accordion {
+    width: 100%;
+}
+
 .work__accordion-list {
     display: var(--flex);
     flex-direction: var(--column);
@@ -649,7 +653,7 @@
     font-weight: bold;
     line-height: 140%;
     letter-spacing: 0%;
-    text-transform: uppercase;
+    text-transform: var(--uppercase);
 }
 
 .work__accordion-title {
@@ -660,15 +664,22 @@
     max-height: 0;
 
     display: var(--flex);
+    justify-content: var(--space-between);
 
-    overflow: hidden;
+    overflow: var(--hidden);
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
 
+.work__accordion-content {
+    max-width: 552px;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    gap: 40px;
+}
+
 .work__accordion-img {
-    margin-top: 10px;
-    
-    max-width: 100%;
+    max-width: 526px;
 }
 
 .work__accordion-item.active .work__accordion-body {
@@ -678,6 +689,148 @@
 }
 
 /*How to work section end*/
+
+/*kviz section start*/
+
+.main__kviz-wrapper {
+    width: 100%;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--center);
+}
+
+/*kviz section end*/
+
+/*sertificate section start*/
+
+.main__sert {
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--center);
+
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.serf__carousel-article {
+    margin-top: 20px;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    gap: 10px;
+}
+
+.main__sert-wrapper {
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--center);
+    gap: 30px;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    content: "" !important;
+
+    display: var(--block);
+}
+
+.swiper-button-next {
+    width: 50px !important;
+    height: 50px !important;
+
+    transform: rotate(180deg);
+
+    background: no-repeat url(../assets/ui/slider_btn_default.svg) center / cover;
+}
+
+.swiper-button-prev {
+    width: 50px !important;
+    height: 50px !important;
+
+    background: no-repeat url(../assets/ui/slider_btn_default.svg) center / cover;
+}
+
+/*sertificate section start*/
+
+/*contact section start*/
+
+.main__form-wrapper {
+    width: 100%;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--center);
+}
+
+.contact__form {
+    padding: 32px;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--flex-start);
+    gap: 24px;
+
+    border-radius: 8px;
+
+    box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+.contact__form-wrap {
+    width: 100%;
+
+    display: var(--flex);
+    align-items: var(--center);
+    align-self: stretch;
+
+    gap: 12px;
+}
+
+.contact__form-group {
+    width: 100%;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--flex-start);
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.contact__form-group input {
+    max-width: 100%;
+}
+
+.contact__form-block {
+    display: var(--flex);
+    align-items: var(--center);
+}
+
+.contact__form-checkbox {
+    margin-right: 12px;
+}
+
+.contact__form-privacy {
+    font-size: 16px;
+}
+
+.privacy__link {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* contact section end*/
 
 @media screen and (max-width: 1640px) {
 
@@ -900,6 +1053,45 @@
     }
 
     /*personal section end*/
+
+    /*How to work start*/
+
+    .work__accordion-header {
+        padding: 8px;
+    }
+
+    .work__accordion-number {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .work__accordion-header::after {
+        width: 24px;
+        height: 24px;
+    }
+
+    .work__accordion-title {
+        font-size: 12px;
+    }
+
+    .work__accordion-item.active .work__accordion-body {
+        padding: 24px;
+    }
+    
+    .work__accordion-body {
+        flex-direction: var(--column);
+        align-items: var(--center);
+    }
+
+    .work__accordion-content {
+        max-width: var(--max-content);
+    }
+
+    .work__accordion-img {
+        max-width: 100%;
+    }
+
+    /*How to work end*/
     
 }
 

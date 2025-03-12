@@ -26,6 +26,7 @@
     --uppercase: uppercase;
     --transform: transform;
     --inline-flex: inline-flex;
+    --max-content: max-content;
 
     --index: calc(1vw + 1vh);
 
