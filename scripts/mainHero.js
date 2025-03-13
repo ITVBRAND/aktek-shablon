@@ -1,11 +1,22 @@
-const videoBtn = document.querySelector('.hero__video-btn');
-const videoMouse = document.querySelector('.hero__video-mouse');
+const openModalVideoBtns = document.querySelectorAll('.hero__video-btn');
+const closeModalVideoBtn = document.querySelector('.hero__video-close');
+const modalVideoWrapper = document.querySelector('.hero__video-wrapper');
 
-videoBtn.addEventListener('mousemove', (e) => {
-    const rect = videoBtn.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+// Функция открытия модального окна
+openModalVideoBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modalVideoWrapper.classList.add('active');
+    });
+});
 
-    videoMouse.style.top = `${y}px`;
-    videoMouse.style.left = `${x}px`;
+// Закрытие окна на крестик
+closeModalVideoBtn.addEventListener('click', () => {
+    modalVideoWrapper.classList.remove('active');
+});
+
+// Закрытие окна при клике вне окна
+modalVideoWrapper.addEventListener('click', (e) => {
+    if (e.target === modalVideoWrapper) {
+        modalVideoWrapper.classList.remove('active');
+    }
 });

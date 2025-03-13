@@ -132,3 +132,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*header fixed and two catalog end*/
+
+/*Modal form start*/
+
+const openModalBtns = document.querySelectorAll('.header__modal-open');
+const closeModalBtn = document.querySelector('.modal__close');
+const modalWrapper = document.querySelector('.modal__wrapper');
+
+// Функция открытия модального окна
+openModalBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modalWrapper.classList.add('active');
+    });
+});
+
+// Закрытие окна на крестик
+closeModalBtn.addEventListener('click', () => {
+    modalWrapper.classList.remove('active');
+});
+
+// Закрытие окна при клике вне окна
+modalWrapper.addEventListener('click', (e) => {
+    if (e.target === modalWrapper) {
+        modalWrapper.classList.remove('active');
+    }
+});
+
+/*Modal form end*/

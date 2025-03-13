@@ -35,7 +35,7 @@
                     <a href="tel:+79185780884" class="header__link nav__link">
                         +7 (918) 578-08-84
                     </a>
-                    <button class="btn header__btn">
+                    <button class="btn header__btn header__modal-open">
                         Заказать звонок
                     </button>
                 </div>
@@ -100,7 +100,7 @@
                     <a href="tel:+79185780884" class="header__link nav__link">
                         +7 (918) 578-08-84
                     </a>
-                    <button class="btn header__btn">
+                    <button class="btn header__btn header__modal-open">
                         Заказать звонок
                     </button>
                 </div>
@@ -281,6 +281,40 @@
 
 <!--Catalog menu fixed end-->
 
+<!--Modal form header start-->
+
+<div class="modal__wrapper">
+    <div class="modal__window">
+        <button class="modal__close"></button>
+        <article class="section__article section__article-center lines__article">
+            <h4 class="section__article-subtitle article__subtitle-center">Заказать звонок</h4>
+            <h2 class="section__article-title article__title-center">Свяжемся с вами<br>в течение 5 минут!</h2>
+        </article>
+        <form action="#" class="modal__form">
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="name">Имя</label>
+                <input class="contact__form-input modal__input-black" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="phone">Номер</label>
+                <input class="contact__form-input modal__input-black" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
+            </div>
+            <div class="contact__form-block">
+                <p class="contact__form-privacy modal__privacy-black">
+                    Нажимая на кнопку, <a class="privacy__link modal__privacy-link" href="/privacy">вы даёте согласие на обработку персональных данных.</a>
+                </p>
+            </div>
+            <div class="contact__form-group">
+                <button class="btn btn__arrow contact__form-btn" type="submit">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Modal form header start-->
+
 <!--Header end-->
 
 <!--main start-->
@@ -308,6 +342,33 @@
             </div>
         </div>
     </section>
+
+    <!--modal video-->
+
+    <div class="hero__video-wrapper">
+        <div class="hero__video-block">
+            <div class="hero__video-content">
+                <button class="hero__video-close"></button>
+                <div class="hero__video-social">
+                    <a href="vk.com" class="hero__video-link dzen" rel="nofollow"><!--social--></a>
+                    <a href="vk.com" class="hero__video-link vk" rel="nofollow"><!--social--></a>
+                </div>
+                <iframe 
+                    src="https://vkvideo.ru/video_ext.php?oid=-19232159&id=456249791&hd=2&autoplay=1"
+                    allow="autoplay;
+                    encrypted-media;
+                    fullscreen;
+                    picture-in-picture;
+                    screen-wake-lock;"
+                    
+                    frameborder="0"
+                    allowfullscreen
+                >
+                </iframe>
+            </div>
+        </div>
+    </div>
+
 <!--hero end-->
 <!--services start-->
     <section class="section main__services">
@@ -718,27 +779,27 @@
                     <form class="contact__form" data-type="contact">
                         <div class="contact__form-wrap">
                             <div class="contact__form-group">
-                                <label for="name">Имя</label>
-                                <input type="text" id="name" name="name" placeholder="Иван Иванов" required="">
+                                <label class="contact__form-label" for="name">Имя</label>
+                                <input class="contact__form-input" type="text" id="name" name="name" placeholder="Иван Иванов" required>
                             </div>
                             <div class="contact__form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="example@mail.ru" required="">
+                                <label class="contact__form-label" for="email">Email</label>
+                                <input class="contact__form-input" type="email" id="email" name="email" placeholder="example@mail.ru" required>
                             </div>
                         </div>
                         <div class="contact__form-wrap">
                             <div class="contact__form-group">
-                                <label for="phone">Номер</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required="">
+                                <label class="contact__form-label" for="phone">Номер</label>
+                                <input class="contact__form-input" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
                             </div>
                             <div class="contact__form-group">
-                                <label for="company">Ваше название</label>
-                                <input type="text" id="company" name="company" placeholder="Название компании / ИП">
+                                <label class="contact__form-label" for="company">Ваше название</label>
+                                <input class="contact__form-input" type="text" id="company" name="company" placeholder="Название компании / ИП">
                             </div>
                         </div>
                         <div class="contact__form-group">
-                            <label for="message">Сообщение</label>
-                            <textarea id="message" name="message" placeholder="Введите сообщение..." required=""></textarea>
+                            <label class="contact__form-label" for="message">Сообщение</label>
+                            <textarea class="contact__form-textarea" id="message" name="message" placeholder="Введите сообщение..." rows="4" required></textarea>
                         </div>
                         <div class="contact__form-block">
                             <p class="contact__form-privacy">
@@ -746,16 +807,15 @@
                             </p>
                         </div>
                         <div class="contact__form-group">
-                            <button class="btn-default contact__btn" type="submit">
+                            <button class="btn btn__arrow contact__form-btn" type="submit">
                                 Отправить
                             </button>
                         </div>
                     </form>
                     <div class="contact__block">
-                        <div style="position:relative;
-                                    overflow:hidden;"
-                        >
-                            <a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.718949%2C47.222378&utm_medium=mapframe&utm_source=maps&z=18.4" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.718949%2C47.222378&z=18.4" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        <iframe class="contact__maps" src="https://yandex.ru/map-widget/v1/?ll=39.718949%2C47.222378&z=18.4" 
+                            allowfullscreen="true">
+                        </iframe>
                         <div class="contact__list">
                             <div class="contact__item">
                                 <p class="contant__title">Email:</p>
