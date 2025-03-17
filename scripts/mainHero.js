@@ -1,4 +1,4 @@
-const openModalVideoBtns = document.querySelectorAll('.hero__video-btn');
+const openModalVideoBtns = document.querySelectorAll('.hero__video-mouse');
 const closeModalVideoBtn = document.querySelector('.hero__video-close');
 const modalVideoWrapper = document.querySelector('.hero__video-wrapper');
 

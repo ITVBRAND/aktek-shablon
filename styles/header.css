@@ -8,6 +8,12 @@
     width: 100%;
 }
 
+.header__default.black {
+    position: var(--relative);
+
+    background-color: var(--clr-dark);
+}
+
 .header__fixed {
     background-color: var(--clr-dark);
 }
@@ -231,6 +237,43 @@
     display: var(--flex);
     flex-direction: var(--column);
     gap: 24px;
+}
+
+.article__subtitle-center {
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--center);
+    gap: calc(var(--index)* .4);
+}
+
+.article__title-center {
+    text-align: var(--center);
+}
+
+.modal__header-title {
+    color: var(--clr-white);
+}
+
+.contact__form-group {
+    width: 100%;
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--flex-start);
+    gap: 6px;
+}
+
+.contact__form-input {
+    padding: calc(var(--index)* .5) calc(var(--index)* .7);
+    width: 100%;
+    font-size: calc(var(--index)* .5);
+    box-sizing: border-box;
+}
+
+.contact__form-btn::after {
+    width: calc(var(--index)* .43);
+    height: calc(var(--index)* .43);
+    transform: rotate(45deg);
+    background: no-repeat url(../assets/ui/arrow.svg) center / cover;
 }
 
 .modal__input-black {
