@@ -27,3 +27,18 @@ var sertificateSwiper = new Swiper(".sertificateSwiper", {
         1024: { slidesPerView: 4 },
     }
 });
+
+var videoSwiper = new Swiper(".videoSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".video-button-next",
+        prevEl: ".video-button-prev",
+    },
+    loop: true,
+    breakpoints: {
+        320: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+    }
+});

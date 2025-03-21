@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
     <title>Каталог - шаблон для wp</title>
 
     <script src="scripts/headerFooter.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="scripts/productSwiper.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js" defer></script>
 
 </head>
 <body>
@@ -324,250 +320,133 @@
 
 <main class="main">
 
-    <div class="catalog__header">
+    <div class="breadcrumb__header">
         <div class="container">
-            <div class="catalog__header-wrapper">
-                <nav class="catalog__breadcrumb">
-                    <a href="#">Главная</a><span> | </span><a href="#">Каталог</a><span> | </span><a href="#">Категория</a><span> | </span><a href="#">Название товара</a>
+            <div class="breadcrumb__header-wrapper">
+                <nav class="breadcrumb__nav">
+                    <a href="#">Главная</a><span> | </span><a href="#">Контакты</a>
                 </nav>
-                <h1 class="catalog__title">
-                    Название товара
+                <h1 class="breadcrumb__title">
+                    Контакты
                 </h1>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="contact__main">
+        <div class="container">
+            <div class="contact__main-wrapper">
 
-        <div class="product__body">
-
-            <div class="product__wrapper">
-
-                <div class="product__carousel">
-
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <div class="contact__information">
+                    <article class="contact__article">
+                        <h3 class="contact__title">Линии порошковой окраски АКТЕК</h3>
+                        <div class="contact__wrap">
+                            <p class="contact__location-text">
+                                344103, Россия,<br>
+                                Ростовская обл.,<br>
+                                г. Ростов-на-Дону,<br>
+                                пер. Машиностроительный,<br>
+                                д. 7, корп. 110
+                            </p>
+                            <div class="contact__work">
+                                <span class="contact__block-title">
+                                    Режим работы:
+                                </span>
+                                <p class="contact__work-time">
+                                    10:00 - 21:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact__action">
+                            <div class="contact__action-wrap">
+                                <span class="contact__block-title">Телефон:</span>
+                                <a href="tel:+7800555355" class="contact__link">
+                                    +7 (800) 555 35-55
                                 </a>
                             </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <div class="contact__action-wrap">
+                                <span class="contact__block-title">Телефон:</span>
+                                <a href="mailto:aktek61@mail.ru" class="contact__link">
+                                    aktek61@mail.ru
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-    
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="product__info">
-                    <div class="product__info-feature">
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                    </div>
-                    <div class="product__info-wrapper">
-                        <div class="product__info-price">
-                            <p class="catalog__product-price product__info-value current">1 134 900 ₽</p>
-                            <p class="catalog__product-price product__info-value old"><span>1 200 900</span> ₽</p>
-                        </div>
-                        <button class="btn btn__arrow product__info-btn">Добавить в корзину</button>
-                    </div>
+                        <button class="btn btn__arrow btn__contact">Написать нам</button>
+                    </article>
+                    <img src="./assets/picture/example_shape.png" alt="фото производства актек" class="contact__img">
                 </div>
 
-            </div>
+                <!--blitz-->
 
-            <div class="product__tab">
-                <button class="product__btn btn active">Описание</button>
-                <button class="product__btn btn">Характеристика</button>
-                <button class="product__btn btn">Доставка и Оплата</button>
+                <section class="section main__form">
+                    <div class="main__form-wrapper">
+                        <article class="section__article section__article-center">
+                            <h4 class="section__article-subtitle article__subtitle-center">Контакты</h4>
+                            <h2 class="section__article-title article__title-center">Мы любим общаться</h2>
+                            <p class="section__article-text">Хотите с нами сотрудничать оставьте заявку и мы<br>свяжемся с вами в течении 5 минут!</p>
+                        </article>
+                        <div class="contact">
+                            <form class="contact__form" data-type="contact">
+                                <div class="contact__form-wrap">
+                                    <div class="contact__form-group">
+                                        <label class="contact__form-label" for="name">Имя</label>
+                                        <input class="contact__form-input" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                                    </div>
+                                    <div class="contact__form-group">
+                                        <label class="contact__form-label" for="email">Email</label>
+                                        <input class="contact__form-input" type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                                    </div>
+                                </div>
+                                <div class="contact__form-wrap">
+                                    <div class="contact__form-group">
+                                        <label class="contact__form-label" for="phone">Номер</label>
+                                        <input class="contact__form-input" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
+                                    </div>
+                                    <div class="contact__form-group">
+                                        <label class="contact__form-label" for="company">Ваше название</label>
+                                        <input class="contact__form-input" type="text" id="company" name="company" placeholder="Название компании / ИП">
+                                    </div>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label class="contact__form-label" for="message">Сообщение</label>
+                                    <textarea class="contact__form-textarea" id="message" name="message" placeholder="Введите сообщение..." rows="4" required></textarea>
+                                </div>
+                                <div class="contact__form-block">
+                                    <p class="contact__form-privacy">
+                                        Нажимая на кнопку, <a class="privacy__link" href="/privacy">вы даёте согласие на обработку персональных данных.</a>
+                                    </p>
+                                </div>
+                                <div class="contact__form-group">
+                                    <button class="btn btn__arrow contact__form-btn" type="submit">
+                                        Отправить
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="contact__block">
+                                <iframe class="contact__maps" src="https://yandex.ru/map-widget/v1/?ll=39.718949%2C47.222378&z=18.4" 
+                                    allowfullscreen="true">
+                                </iframe>
+                                <div class="contact__list">
+                                    <div class="contact__item">
+                                        <p class="contant__title">Email:</p>
+                                        <a href="mailto:contact@company.com" class="contact__link">contact@company.com</a>
+                                    </div>
+                                    <div class="contact__item">
+                                        <p class="contant__title">Телефон:</p>
+                                        <a href="tel:+78005553555" class="contact__link">+7 (800) 555 35-55</a>
+                                    </div>
+                                    <div class="contact__item">
+                                        <p class="contant__title">Адрес:</p>
+                                        <a href="#" class="contact__link">г. Ростов-на-Дону., ул. Пушкина д. 1</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
             </div>
-
-            <div class="product__description">
-                <h2>Заголовок описания</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas tempore omnis repellendus inventore itaque totam consectetur a autem facilis aspernatur quis ratione, eos facere deleniti laboriosam beatae repellat placeat nemo repudiandae mollitia? Saepe vel, vitae tenetur autem qui repellendus architecto vero repellat ut beatae impedit nostrum dolorum quaerat nisi odio ipsum. Dicta veniam facilis possimus tenetur, aut odit dolores.</p>
-            </div>
-
         </div>
-
-        <div class="product__recommendate">
-
-            <h2 class="product__recommendate-title">
-                Похожие предложения
-            </h2>
-
-            <div class="catalog__product-list product__recommendate-wrapper">
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                <span>1 200 900</span> ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                1 200 900 ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                <span>1 200 900</span> ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                <span>1 200 900</span> ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-            </div>
-
-            <div class="product__recommendate-block">
-                <button class="btn btn__arrow btn__product">Показать ещё</button>
-            </div>
-
-        </div>
-
     </div>
 
 </main>

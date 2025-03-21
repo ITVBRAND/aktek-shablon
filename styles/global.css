@@ -2,6 +2,7 @@
 @import url("fonts.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("contact.css");
 
 :root {
     --flex: flex;
@@ -28,6 +29,7 @@
     --transform: transform;
     --inline-flex: inline-flex;
     --max-content: max-content;
+    --stretch: stretch;
 
     --index: calc(1vw + 1vh);
 
@@ -187,6 +189,13 @@ img {
     text-align: var(--center);
 }
 
+.article__subtitle-left {
+    display: var(--flex);
+    flex-direction: var(--row);
+    align-items: var(--center);
+    gap: calc(var(--index)* .4);
+}
+
 .section__article-subtitle::before {
     content: '';
 
@@ -196,6 +205,10 @@ img {
     width: calc(var(--index) * .9);
 
     background: no-repeat url(../assets/ui/article_star.svg) center / cover;
+}
+
+.section__article-center {
+    text-align: var(--center);
 }
 
 .nav__link {
@@ -283,7 +296,7 @@ img {
 .breadcrumb__nav a, span {
     color: var(--clr-grey);
 
-    font-size: calc(var(--index) * .7);
+    font-size: 1em;
 }
 
 .section__description {
