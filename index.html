@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <title>Актек - шаблон для wp</title>
 
@@ -126,7 +126,7 @@
         <a href="/" class="header__logo">
             <!--Text logo-->
         </a>
-        <button href="#" class="burger__catalog">
+        <button class="burger__catalog">
             Каталог
         </button>
     </div>
@@ -293,15 +293,15 @@
         <form action="#" class="modal__form">
             <div class="contact__form-group">
                 <label class="contact__form-label modal__label-black" for="name">Имя</label>
-                <input class="contact__form-input modal__input-black" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                <input class="contact__form-input modal__input-black" type="text" id="modalName" name="name" placeholder="Иван Иванов" required>
             </div>
             <div class="contact__form-group">
                 <label class="contact__form-label modal__label-black" for="name">Компания</label>
-                <input class="contact__form-input modal__input-black" type="text" id="company" name="company" placeholder="Название компаний" required>
+                <input class="contact__form-input modal__input-black" type="text" id="modalCompany" name="company" placeholder="Название компаний" required>
             </div>
             <div class="contact__form-group">
                 <label class="contact__form-label modal__label-black" for="phone">Номер</label>
-                <input class="contact__form-input modal__input-black" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
+                <input class="contact__form-input modal__input-black" type="tel" id="modalPhone" name="phone" placeholder="+7 (800) 555 35-55" required>
             </div>
             <div class="contact__form-block">
                 <p class="contact__form-privacy modal__privacy-black">
@@ -328,14 +328,14 @@
     <section class="hero" style="background: no-repeat url(assets/picture/hero_bg.jpeg) center / cover;">
         <div class="container">
             <div class="hero__wrapper">
-                <article class="hero__article">
+                <div class="hero__article">
                     <h1 class="hero__title">Предлагаем полный спектр продуктов и услуг в сфере порошковой окраски</h1>
                     <p class="hero__text">Реализуем проекты под ключ<br>от 20 дней с момента согласования</p>
                     <div class="hero__wrap">
                         <button class="btn hero__btn">О компаний</button>
                         <button class="btn hero__btn">Сотрудничество</button>
                     </div>
-                </article>
+                </div>
                 <div class="hero__video-btn">
                     <img src="assets/picture/aktek.svg" alt="logo" class="hero__logo">
                     <div class="hero__video-mouse">
@@ -364,9 +364,8 @@
                     fullscreen;
                     picture-in-picture;
                     screen-wake-lock;"
-                    
-                    frameborder="0"
                     allowfullscreen
+                    class="hero__video-frame"
                 >
                 </iframe>
             </div>
@@ -402,7 +401,7 @@
     </section>
 <!--services end-->
 <!--excursion start-->
-    <section class="section main__excursion">
+    <div class="section main__excursion">
         <div class="container">
             <div class="main__excursion-wrapper">
                 <picture>
@@ -417,7 +416,7 @@
                 </article>
             </div>
         </div>
-    </section>
+    </div>
 <!--excursion end-->
 <!--lines start-->
     <section class="section main__lines">
@@ -499,7 +498,7 @@
     </section>
 <!--lines start-->
 <!--personal start-->
-    <section class="section main__personal">
+    <div class="section main__personal">
         <div class="container">
             <div class="main__personal-wrapper">
                 <div class="main__personal-block">
@@ -534,10 +533,10 @@
                 </picture>
             </div>
         </div>
-    </section>
+    </div>
 <!--personal start-->
 <!--geografy start-->
-    <section class="section main__geografy">
+    <div class="section main__geografy">
         <div class="container">
             <div class="main__geografy-wrapper">
                 <article class="section__article section__article-center">
@@ -551,10 +550,10 @@
                 </picture>
             </div>
         </div>
-    </section>
+    </div>
 <!--geografy end-->
 <!--client start-->
-    <section class="section main__client">
+    <div class="section main__client">
         <div class="container">
             <div class="main__client-wrapper">
                 <article class="section__article section__article-center">
@@ -595,10 +594,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <!--client end-->
 <!--catalog start-->
-    <section class="section main__catalog">
+    <div class="section main__catalog">
         <div class="container">
             <div class="main__catalog-wrapper">
                 <article class="section__article section__article-center">
@@ -738,7 +737,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <!--catalog end-->
 <!--How to work start-->
     <section class="section main__work">
@@ -815,7 +814,7 @@
 -->
 <!--kviz end-->
 <!--sertificate start-->
-    <section class="section main__sert">
+    <div class="section main__sert">
         <div class="container">
             <div class="main__sert-wrapper">
                 <article class="section__article section__article-center">
@@ -897,10 +896,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <!--sertificate end-->
 <!--form start-->
-    <section class="section main__form">
+    <div class="section main__form">
         <div class="container">
             <div class="main__form-wrapper">
                 <article class="section__article section__article-center">
@@ -946,8 +945,7 @@
                         </div>
                     </form>
                     <div class="contact__block">
-                        <iframe class="contact__maps" src="https://yandex.ru/map-widget/v1/?ll=39.718949%2C47.222378&z=18.4" 
-                            allowfullscreen="true">
+                        <iframe class="contact__maps" src="https://yandex.ru/map-widget/v1/?ll=39.718949%2C47.222378&z=18.4">
                         </iframe>
                         <div class="contact__list">
                             <div class="contact__item">
@@ -967,7 +965,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <!--form end-->
 </main>
 

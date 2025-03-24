@@ -63,8 +63,8 @@
 .header__btn::after {
     content: '';
 
-    width: 16px;
-    height: 16px;
+    width: calc(var(--index)* .43);
+    height: calc(var(--index)* .43);
 
     display: var(--block);
 
@@ -172,7 +172,6 @@
     font-size: 1em;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0%;
 }
 
 .header__catalog-icon {
@@ -505,7 +504,7 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 140%;
-        letter-spacing: 0%;
+
 
         text-align: var(--left);
     }
@@ -517,7 +516,7 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 150%;
-        letter-spacing: 0%;
+
 
         text-align: var(--left);
     }

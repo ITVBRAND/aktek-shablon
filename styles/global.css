@@ -72,7 +72,7 @@ body {
     font-family: "Mulish", Helvetica, sans-serif;
     font-size: 14px;
 
-    background-color: var(--clr-white);
+    background-color: #fff;
 }
 
 h1 {
@@ -81,7 +81,6 @@ h1 {
     font-size: calc(var(--index) * 2.336);
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: 0%;
 
     will-change: var(--transform);
 }
@@ -92,7 +91,6 @@ h2 {
     font-size: calc(var(--index) * 1.8);
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: 0%;
 
     will-change: var(--transform);
 }
@@ -104,7 +102,6 @@ h3 {
     font-size: calc(var(--index) * .86);
     font-weight: 700;
     line-height: 140%;
-    letter-spacing: 0%;
 }
 
 h4 {
@@ -113,7 +110,6 @@ h4 {
     font-size: calc(var(--index) * .7);
     font-weight: 800;
     line-height: 100%;
-    letter-spacing: 0%;
     text-transform: var(--uppercase);
 
     will-change: var(--transform);
@@ -125,7 +121,6 @@ h5 {
     font-size: calc(var(--index)* .7);
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0%;
 
     will-change: var(--transform);
 }
@@ -136,7 +131,6 @@ p {
     font-size: calc(var(--index) * .7);
     font-weight: 500;
     line-height: 140%;
-    letter-spacing: 0%;
 
     will-change: var(--transform);
 }
@@ -159,6 +153,10 @@ button {
 
 img {
     pointer-events: var(--none);
+}
+
+iframe {
+    border: var(--none);
 }
 
 /*default-style-end*/
@@ -217,7 +215,6 @@ img {
     font-size: 1em;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0%;
 
     transition: var(--transition);
 }
@@ -236,7 +233,6 @@ img {
     font-size: calc(var(--index) * .43);
     font-weight: 800;
     line-height: 16px;
-    letter-spacing: 0%;
     text-transform: uppercase;
 
     transition: var(--transition);
@@ -260,7 +256,6 @@ img {
     font-size: calc(var(--index) * .43);
     font-weight: 800;
     line-height: 16px;
-    letter-spacing: 0%;
     text-transform: uppercase;
 
     display: var(--inline-flex);

@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/catalog.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="styles/basic-page.css">
 
     <title>Каталог - шаблон для wp</title>
 
     <script src="scripts/headerFooter.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="scripts/productSwiper.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js" defer></script>
 
 </head>
 <body>
@@ -292,15 +287,15 @@
         <form action="#" class="modal__form">
             <div class="contact__form-group">
                 <label class="contact__form-label modal__label-black" for="name">Имя</label>
-                <input class="contact__form-input modal__input-black" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                <input class="contact__form-input modal__input-black" type="text" id="modalName" name="name" placeholder="Иван Иванов" required>
             </div>
             <div class="contact__form-group">
                 <label class="contact__form-label modal__label-black" for="name">Компания</label>
-                <input class="contact__form-input modal__input-black" type="text" id="company" name="company" placeholder="Название компаний" required>
+                <input class="contact__form-input modal__input-black" type="text" id="modalCompany" name="company" placeholder="Название компаний" required>
             </div>
             <div class="contact__form-group">
                 <label class="contact__form-label modal__label-black" for="phone">Номер</label>
-                <input class="contact__form-input modal__input-black" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
+                <input class="contact__form-input modal__input-black" type="tel" id="modalPhone" name="phone" placeholder="+7 (800) 555 35-55" required>
             </div>
             <div class="contact__form-block">
                 <p class="contact__form-privacy modal__privacy-black">
@@ -324,251 +319,283 @@
 
 <main class="main">
 
-    <div class="catalog__header">
+    <div class="breadcrumb__header">
         <div class="container">
-            <div class="catalog__header-wrapper">
-                <nav class="catalog__breadcrumb">
-                    <a href="#">Главная</a><span> | </span><a href="#">Каталог</a><span> | </span><a href="#">Категория</a><span> | </span><a href="#">Название товара</a>
+            <div class="breadcrumb__header-wrapper">
+                <nav class="breadcrumb__nav">
+                    <a href="#">Главная</a><span> | </span><a href="#">Порошковая окраска</a>
                 </nav>
-                <h1 class="catalog__title">
-                    Название товара
+                <h1 class="breadcrumb__title">
+                    Порошковая окраска
                 </h1>
             </div>
         </div>
     </div>
 
     <div class="container">
+        <div class="basic__body">
 
-        <div class="product__body">
-
-            <div class="product__wrapper">
-
-                <div class="product__carousel">
-
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fancybox="gallery" href="https://swiperjs.com/demos/images/nature-1.jpg">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
+            <!--basic banner start-->
     
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="изображение товара">
-                            </div>
-                        </div>
-                    </div>
+            <div class="basic__banner">
+                <picture class="basic__banner-picture">
+                    <source media="(max-width: 430px)" srcset="/assets/picture/banner_about_example-mob.png">
+                    <img src="/assets/picture/banner_about_example.png" alt="баннер" class="basic__banner-img">
+                </picture>
+            </div>
     
+            <!--basic banner end-->
+
+            <!--content start-->
+
+            <div class="basic__troble">
+                <div class="section__article section__article-center">
+                    <p class="section__article-text">
+                        Компания АКТЭК изготавливает линии порошковой окраски любой сложности и в полном соответствии с требованиями заказчика. При проектировании каждой конкретной линии учитываются требования по производительности, габаритам деталей, стойкости получаемого покрытия, частоте смены цвета, используемому энергоносителю (газ, дизель, электроэнергия). Мы всегда учитываем производственные условия заказчика: состояние поверхности окрашиваемых деталей перед покраской, размеры производственного помещения, температуру и влажность в цехе, химический состав воды.
+                    </p>
                 </div>
-    
-                <div class="product__info">
-                    <div class="product__info-feature">
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                        <p class="product__info-text"><span>Характеристика:</span> данный</p>
-                    </div>
-                    <div class="product__info-wrapper">
-                        <div class="product__info-price">
-                            <p class="catalog__product-price product__info-value current">1 134 900 ₽</p>
-                            <p class="catalog__product-price product__info-value old"><span>1 200 900</span> ₽</p>
-                        </div>
-                        <button class="btn btn__arrow product__info-btn">Добавить в корзину</button>
-                    </div>
+            </div>
+
+            <!--content end-->
+
+            <!--geografy start-->
+
+            <div class="main__geografy-wrapper">
+                <article class="section__article section__article-center basic-article">
+                    <h4 class="section__article-subtitle article__subtitle-center">География продаж</h4>
+                    <h2 class="section__article-title article__title-center">Производим линии порошĸовой оĸрасĸи, вĸлючая монтаж у вас на производстве по всему СНГ.</h2>
+                    <button class="btn btn__arrow btn__maps header__modal-open">запросить расчёт стоимости</button>
+                </article>
+                <picture class="geografy__picture">
+                    <source media="(max-width: 1024px)" srcset="assets/picture/maps_mob.png">
+                    <img class="geografy__img" src="assets/picture/maps.png" alt="worker">
+                </picture>
+            </div>
+
+            <!--geografy end-->
+
+            <!--colors start-->
+
+            <div class="basic__troble">
+                <article class="section__article section__article-center">
+                    <h4 class="section__article-subtitle article__subtitle-center">колористика</h4>
+                    <h2 class="section__article-title article__title-center">Палитра цветов</h2>
+                    <p class="section__article-text">
+                        Мы гарантируем точное соответствие всех цветов, обеспечивая высокое качество.
+                    </p>
+                </article>
+
+                <div class="basic__banner">
+                    <picture class="basic__banner-picture">
+                        <source media="(max-width: 430px)" srcset="/assets/picture/banner_about_example-mob.png">
+                        <img src="/assets/picture/banner_about_example.png" alt="баннер" class="basic__banner-img">
+                    </picture>
                 </div>
 
+                <div class="basic__troble-list">
+                    <div class="basic__troble-item">
+                        <div class="basic__troble-content">
+                            <h5 class="basic__troble-title">
+                                Что красим:
+                            </h5>
+                            <p class="basic__troble-text">
+                                Заказчики в основном - производители металлоизделий. Нашим оборудованием
+                                красят: опоры освещения, светильники, фурнитуру для мебели, ограждения,
+                                инвентарь для благоустройства, стеллажные системы, запорные механизмы, изделия
+                                для бытовых нужд, детали вентиляции и дымоходов, детали фасадных систем,
+                                сувенирную продукцию, авто-детали, диски, декоративные изделия, различные
+                                металлические емкости, рекламные вывески, газовые трубы, лестницы, панели под
+                                колонки АЗС, ревизионные люки, электро-шкафы, элементы для сельхоз техники,
+                                оградки, лавочки, радиаторы.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="basic__troble-item">
+                        <div class="basic__troble-content">
+                            <h5 class="basic__troble-title">
+                                Качество проверяем тестом на адгезию и толщиномером
+                            </h5>
+                            <p class="basic__troble-text">
+                                Мы не отдаем брак! Перед отправкой покрашеных изделий мы
+                                проводим тест на Адгезию. Этот тест подтверждает, что было нанесено
+                                необходмое количество краски (60-90микрон (2,5-3 слоя краски)) и был
+                                соблюден температурный режим при запекании (180-200 градусов)
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="product__tab">
-                <button class="product__btn btn active">Описание</button>
-                <button class="product__btn btn">Характеристика</button>
-                <button class="product__btn btn">Доставка и Оплата</button>
+            <!--colors end-->
+
+            <!--content start-->
+
+            <div class="basic-basic__content basic__content-reverse">
+                <article class="basic__content-article">
+                    <h2 class="basic__content-title">
+                        В наших печах краска не желтеет!
+                    </h2>
+                    <p class="basic__content-subtitle">
+                        Это обусловлено использованием специальной
+                        технологии конвекционных печей полимеризации и
+                        соблюдением качества регулировки температуры во всех
+                        участках печи. Отлаживаем температурный режим с
+                        максимальным отклонением до +/- 2 градусов цельсия
+                    </p>
+                </article>
+                <div class="basic__img-wrapper basic__about-block basic__content-img">
+                    <picture class="basic__banner-picture">
+                        <source media="(max-width: 430px)" srcset="/assets/picture/banner_about_example-mob.png">
+                        <img src="assets/picture/about_course-example.png" alt="баннер" class="basic__banner-img">
+                    </picture>
+                </div>
             </div>
 
-            <div class="product__description">
-                <h2>Заголовок описания</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas tempore omnis repellendus inventore itaque totam consectetur a autem facilis aspernatur quis ratione, eos facere deleniti laboriosam beatae repellat placeat nemo repudiandae mollitia? Saepe vel, vitae tenetur autem qui repellendus architecto vero repellat ut beatae impedit nostrum dolorum quaerat nisi odio ipsum. Dicta veniam facilis possimus tenetur, aut odit dolores.</p>
+            <!--content end-->
+
+            <!--content start-->
+
+            <div class="basic-basic__content">
+                <article class="basic__content-article">
+                    <h2 class="basic__content-title">
+                        Преимущество печи для услуги окрашивания.
+                    </h2>
+                    <p class="basic__content-subtitle">
+                        За счет габаритов печи, получается окрашивать большой объем изделий
+                        и/или крупно-габаритные изделия. Это влияет на скорость окрашивания
+                        и может экономить денежные средств клиентов за счет
+                        вместительности печи. Сроки покраски самые быстрые в области. То,
+                        на что конкуренты говорят 30 дней- красим за 2 недели
+                    </p>
+                </article>
+                <div class="basic__img-wrapper basic__about-block basic__content-img">
+                    <picture class="basic__banner-picture">
+                        <source media="(max-width: 430px)" srcset="/assets/picture/banner_about_example-mob.png">
+                        <img src="assets/picture/about_course-example.png" alt="баннер" class="basic__banner-img">
+                    </picture>
+                </div>
             </div>
 
+            <!--content end-->
+
+            <!--comment start-->
+
+            <div class="basic__comment">
+                <div class="basic__comment-block">
+                    <div class="basic__comment-wrapper">
+                        <img src="assets/picture/user_example.png" alt="Фото начальника актек" class="basic__comment-img">
+                    </div>
+                    <div class="basic__comment-header">
+                        <h5 class="basic__comment-name">Имя Фамилия</h5>
+                        <p class="basic__comment-rank">Начальник производства</p>
+                    </div>
+                </div>
+                <h3 class="basic__comment-title">
+                    После окраски производят упаковку которая
+                    не повреждает окрашеное изделие до
+                    окончания процесса кристализации (3 дня)
+                </h3>
+            </div>
+
+            <!--comment end-->
+
+            <!--content start-->
+
+            <div class="basic-basic__content basic__content-reverse">
+                <article class="basic__content-article">
+                    <h2 class="basic__content-title">
+                        Нанесение цинковой грунтовки
+                    </h2>
+                    <p class="basic__content-subtitle">
+                        Для дополнительной зашиты метала от корозии предлагается
+                        дополнительная услуга - нанесения цинковой грунтовки, которая не
+                        пропускает ржавчину под краску и мешает ее аспространению. Такая
+                        защита необходима изделиям, которые подвергаются дополнительной
+                        физической нагрузке или сложному климату.
+                    </p>
+                </article>
+                <div class="basic__img-wrapper basic__about-block basic__content-img">
+                    <picture class="basic__banner-picture">
+                        <source media="(max-width: 430px)" srcset="/assets/picture/banner_about_example-mob.png">
+                        <img src="assets/picture/about_course-example.png" alt="баннер" class="basic__banner-img">
+                    </picture>
+                </div>
+            </div>
+
+            <!--content end-->
+    
         </div>
-
-        <div class="product__recommendate">
-
-            <h2 class="product__recommendate-title">
-                Похожие предложения
-            </h2>
-
-            <div class="catalog__product-list product__recommendate-wrapper">
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                <span>1 200 900</span> ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                1 200 900 ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                <span>1 200 900</span> ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#" class="catalog__product-item">
-                    <div class="catalog__product-wallpaper">
-                        <div class="catalog__product-wallpaper icon__list">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                            <img src="assets/ui/product_energy.svg" alt="иконки" class="catalog__product-wallpaper icon__item">
-                        </div>
-                        <img src="assets/picture/product_example.png" alt="товар" class="catalog__product-img">
-                    </div>
-                    <article class="catalog__product-article">
-                        <div class="catalog__product-block">
-                            <h5 class="catalog__product-title">Название товара</h5>
-                            <div class="catalog__product-feature">
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                                <span class="catalog__product-freature item">Характеристика: данные</span>
-                            </div>
-                        </div>
-                        <div class="catalog__product-wrapper">
-                            <p class="catalog__product-price current">
-                                от 1 134 900 ₽
-                            </p>
-                            <p class="catalog__product-price old">
-                                <span>1 200 900</span> ₽
-                            </p>
-                        </div>
-                    </article>
-                </a>
-
-            </div>
-
-            <div class="product__recommendate-block">
-                <button class="btn btn__arrow btn__product">Показать ещё</button>
-            </div>
-
-        </div>
-
     </div>
+
+    <!--form start-->
+    <div class="section main__form">
+        <div class="container">
+            <div class="main__form-wrapper">
+                <article class="section__article section__article-center">
+                    <h4 class="section__article-subtitle article__subtitle-center">Контакты</h4>
+                    <h2 class="section__article-title article__title-center">Мы любим общаться</h2>
+                    <p class="section__article-text">Хотите с нами сотрудничать оставьте заявку и мы<br>свяжемся с вами в течении 5 минут!</p>
+                </article>
+                <div class="contact">
+                    <form class="contact__form" data-type="contact">
+                        <div class="contact__form-wrap">
+                            <div class="contact__form-group">
+                                <label class="contact__form-label" for="name">Имя</label>
+                                <input class="contact__form-input" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label class="contact__form-label" for="email">Email</label>
+                                <input class="contact__form-input" type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                            </div>
+                        </div>
+                        <div class="contact__form-wrap">
+                            <div class="contact__form-group">
+                                <label class="contact__form-label" for="phone">Номер</label>
+                                <input class="contact__form-input" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label class="contact__form-label" for="company">Ваше название</label>
+                                <input class="contact__form-input" type="text" id="company" name="company" placeholder="Название компании / ИП">
+                            </div>
+                        </div>
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="message">Сообщение</label>
+                            <textarea class="contact__form-textarea" id="message" name="message" placeholder="Введите сообщение..." rows="4" required></textarea>
+                        </div>
+                        <div class="contact__form-block">
+                            <p class="contact__form-privacy">
+                                Нажимая на кнопку, <a class="privacy__link" href="/privacy">вы даёте согласие на обработку персональных данных.</a>
+                            </p>
+                        </div>
+                        <div class="contact__form-group">
+                            <button class="btn btn__arrow contact__form-btn" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                    <div class="contact__block">
+                        <iframe class="contact__maps" src="https://yandex.ru/map-widget/v1/?ll=39.718949%2C47.222378&z=18.4">
+                        </iframe>
+                        <div class="contact__list">
+                            <div class="contact__item">
+                                <p class="contant__title">Email:</p>
+                                <a href="mailto:contact@company.com" class="contact__link">contact@company.com</a>
+                            </div>
+                            <div class="contact__item">
+                                <p class="contant__title">Телефон:</p>
+                                <a href="tel:+78005553555" class="contact__link">+7 (800) 555 35-55</a>
+                            </div>
+                            <div class="contact__item">
+                                <p class="contant__title">Адрес:</p>
+                                <a href="#" class="contact__link">г. Ростов-на-Дону., ул. Пушкина д. 1</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form end-->
 
 </main>
 
