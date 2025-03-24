@@ -1,6 +1,8 @@
 /*case list start*/
 
 .case__list {
+    margin-bottom: 80px;
+
     display: var(--grid);
     grid-template-columns: repeat(2, 1fr);
     align-items: var(--flex-start);
@@ -61,6 +63,8 @@
     /*case list start*/
     
     .case__list {
+        margin-bottom: 40px;
+        
         display: var(--flex);
         flex-direction: var(--column);
 

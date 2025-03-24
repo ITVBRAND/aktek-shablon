@@ -923,6 +923,10 @@
 
     /*How to work end*/
 
+    .basic-system__filter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -960,6 +964,10 @@
     }
 
     /*client section end*/
+
+    .basic-recomendation {
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -1000,6 +1008,10 @@
 
     .basic-camera__cube p {
         max-width: 90%;
+    }
+
+    .basic-system__filter {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
