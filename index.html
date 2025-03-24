@@ -6,11 +6,13 @@
 
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/basket.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <title>Актек - шаблон для wp</title>
 
     <script src="scripts/headerFooter.js" defer></script>
+    <script src="scripts/basket.js" defer></script>
     <script src="scripts/mainHero.js" defer></script>
     <script src="scripts/mainLines.js" defer></script>
     <script src="scripts/mainAccordion.js" defer></script>
@@ -318,6 +320,68 @@
 </div>
 
 <!--Modal form header start-->
+
+<!--Basket start-->
+
+<button class="basket">
+    <div class="basket__quantity">
+        <span>+<span class="basket__number">99</span></span>
+    </div>
+</button>
+
+<div class="basket__wrapper">
+    <div class="basket__modal">
+        <button class="basket__close modal__close"></button>
+
+        <article class="section__article section__article-center lines__article">
+            <h4 class="section__article-subtitle article__subtitle-center">Корзина</h4>
+        </article>
+
+        <div class="basket__list">
+            <div class="basket__item">
+                <div class="basket__product">
+                    <img src="#" alt="Фото товара" class="basket__product--img">
+                    <article class="basket__product--article">
+                        <h5 class="basket__product--title">Название товара</h5>
+                        <p class="basket__product--text">Длинное описание товара</p>
+                    </article>
+                </div>
+                <div class="basket__control">
+                    <div class="basket__control--wrap">
+                        <button class="basket__control--minus">−</button>
+                        <input type="number" class="basket__control--input" value="0" min="1" max="99">
+                        <button class="basket__control--plus">+</button>
+                    </div>
+                    <p class="basket__control--price"><span>1 222 345</span> ₽</p>
+                    <button class="basket__control--close">x</button>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" class="modal__form basket__form">
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="name">Имя</label>
+                <input class="contact__form-input modal__input-black" type="text" id="modalName" name="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="phone">Номер</label>
+                <input class="contact__form-input modal__input-black" type="tel" id="modalPhone" name="phone" placeholder="+7 (800) 555 35-55" required>
+            </div>
+            <div class="contact__form-block">
+                <p class="contact__form-privacy modal__privacy-black">
+                    Нажимая на кнопку, <a class="privacy__link modal__privacy-link" href="/privacy">вы даёте согласие на обработку персональных данных.</a>
+                </p>
+            </div>
+            <div class="contact__form-group">
+                <button class="btn btn__arrow contact__form-btn" type="submit">
+                    Оформить заказ
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Basket end-->
 
 <!--Header end-->
 

@@ -1,0 +1,253 @@
+/*basket btn*/
+
+.basket {
+    position: var(--fixed);
+    top: 50%;
+    right: 1px;
+
+    padding: 20px;
+
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+
+    transition: var(--transition);
+
+    outline: 1px solid var(--clr-oracle);
+    background-color: var(--clr-oracle);
+
+    z-index: 1000;
+}
+
+.basket::after {
+    content: '';
+
+    height: 32px;
+    width: 32px;
+
+    display: var(--block);
+
+    background: no-repeat url(../assets/ui/basket_stable.svg) center / cover;
+}
+
+.basket:hover {
+    background-color: var(--clr-dark);
+}
+
+.basket:hover::after {
+    background: no-repeat url(../assets/ui/basket_active.svg) center / cover;
+}
+
+.basket__quantity {
+    position: var(--absolute);
+    top: -15px;
+    left: -15px;
+
+    padding: 6px 4px;
+
+    color: #fff;
+    text-align: var(--center);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+    border: 1px solid var(--clr-oracle);
+    background-color: var(--clr-dark);
+}
+
+/*basket btn*/
+
+/*basket modal*/
+
+.basket__wrapper {
+    position: var(--fixed);
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+
+    background-color: #00000099;
+    backdrop-filter: blur(20px);
+
+    z-index: 1000;
+
+    transition: var(--transition);
+
+    visibility: var(--hidden);
+    opacity: 0;
+}
+
+.basket__modal {
+    padding: 50px;
+
+    position: var(--relative);
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+    gap: 30px;
+
+    border-radius: 12px;
+    background: rgb(28, 26, 23);
+}
+
+.basket__list {
+    padding: 30px 0;
+    width: 100%;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    gap: 30px;
+
+    border-top: 1px solid var(--clr-oracle);
+    border-bottom: 1px solid var(--clr-oracle);
+}
+
+.basket__item {
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 34px;
+}
+
+.basket__product {
+    display: var(--flex);
+    gap: 24px;
+}
+
+.basket__product--img {
+    width: 100px;
+    height: 100px;
+
+    display: var(--block);
+    object-fit: var(--cover);
+
+    background-color: var(--clr-white);
+}
+
+.basket__product--article {
+    color: var(--clr-white);
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--flex-start);
+    justify-content: var(--center);
+    gap: 14px;
+}
+
+.basket__control {
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 34px;
+}
+
+.basket__control--wrap {
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 12px;
+}
+
+.basket__control--wrap button {
+    margin: 0;
+    padding: 0;
+
+    height: 20px;
+    width: 20px;
+
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+
+    color: var(--clr-white);
+
+    font-size: 10px;
+    line-height: 10px;
+
+    border-radius: 14px;
+    border: 1px solid var(--clr-white);
+}
+
+.basket__control--wrap button:hover {
+    color: var(--clr-oracle);
+    border: 1px solid var(--clr-oracle);
+}
+
+.basket__control--input {
+    text-align: var(--center);
+
+    color: #FFF;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    border: var(--none);
+    outline: var(--none);
+    background: transparent;
+}
+
+.basket__control--input[type="number"]::-webkit-outer-spin-button,
+.basket__control--input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: var(--none);
+}
+
+input[type='number'],
+.basket__control--input[type="number"]:hover,
+.basket__control--input[type="number"]:focus {
+    appearance: var(--none);
+    -moz-appearance: textfield;
+}
+
+.basket__control--price {
+    color: var(--clr-white);
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.basket__control--close {
+    margin: 0;
+    padding: 0;
+
+    height: 20px;
+    width: 20px;
+
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+
+    color: var(--clr-blood-red);
+
+    font-size: 10px;
+    line-height: 10px;
+
+    border-radius: 14px;
+    border: 1px solid var(--clr-blood-red);
+}
+
+.basket__form {
+    width: 100%;
+}
+
+/*basket modal*/
+
+@media screen and (max-width: 768px) {
+
+    /*basket btn*/
+    
+    .basket {
+        top: 80%;
+    }
+
+    /*basket btn*/
+
+}
