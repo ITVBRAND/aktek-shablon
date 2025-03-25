@@ -17,7 +17,8 @@ document.querySelectorAll('.work__accordion-header').forEach(header => {
             body.style.maxHeight = null;
         } else {
             accordionItem.classList.add('active');
-            body.style.maxHeight = body.scrollHeight + "px";
+            const targetHeight = Math.min(body.scrollHeight, 1280);
+            body.style.maxHeight = targetHeight + "px";
         }
     });
 });

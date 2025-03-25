@@ -929,8 +929,6 @@
 
 .work__accordion-item.active .work__accordion-body {
     padding: 30px 67px;
-
-    max-height: var(--auto);
 }
 
 /*How to work section end*/

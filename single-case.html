@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/case.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Каталог - шаблон для wp</title>
+
+    <script src="scripts/headerFooter.js" defer></script>
+
+</head>
+<body>
+<!--Header start-->
+
+<header class="header__default black">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__top header__block">
+                <a href="/" class="header__logo">
+                    <!--Text logo-->
+                </a>
+                <div class="header__contact">
+                    <a href="mailto:it@vbrand.ru" class="header__link nav__link">
+                        hello@aktek.ru
+                    </a>
+                    <a href="tel:+79185780884" class="header__link nav__link">
+                        +7 (918) 578-08-84
+                    </a>
+                    <button class="btn header__btn header__modal-open">
+                        Заказать звонок
+                    </button>
+                </div>
+                <button class="header__burger">
+                    <!--Burger-->
+                </button>
+            </div>
+            <div class="header__nav header__block">
+                <button class="btn header__catalog">
+                    Каталог
+                </button>
+                <a href="#" class="header__link nav__link">
+                    Производство линий
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Порошковая окраска
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Гарантия и сервис
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Проекты
+                </a>
+                <a href="#" class="header__link nav__link">
+                    О компании
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Обучение
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Экскурсии
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Доставка и оплата
+                </a>
+                <a href="#" class="header__link nav__link">
+                    Контакты
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--Header fixed start-->
+
+<header class="header__fixed">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__top header__block">
+                <div class="header__logo-wrapper">
+                    <a href="/" class="header__logo">
+                        <!--Text logo-->
+                    </a>
+                    <button class="btn header__catalog header__catalog-fixed">
+                        Каталог
+                    </button>
+                </div>
+                <div class="header__contact">
+                    <a href="mailto:it@vbrand.ru" class="header__link nav__link">
+                        hello@aktek.ru
+                    </a>
+                    <a href="tel:+79185780884" class="header__link nav__link">
+                        +7 (918) 578-08-84
+                    </a>
+                    <button class="btn header__btn header__modal-open">
+                        Заказать звонок
+                    </button>
+                </div>
+                <button class="header__burger">
+                    <!--Burger-->
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--Header fixed end-->
+
+<!--Burger menu-->
+
+<div class="burger__menu">
+    <div class="burger__wrap">
+        <button class="burger__close">
+            <!--close-->
+        </button>
+    </div>
+    <div class="burger__header">
+        <a href="/" class="header__logo">
+            <!--Text logo-->
+        </a>
+        <button class="burger__catalog">
+            Каталог
+        </button>
+    </div>
+    <nav class="burger__nav">
+        <a href="#" class="nav__link">
+            Производство линий
+        </a>
+        <a href="#" class="nav__link">
+            Порошковая окраска
+        </a>
+        <a href="#" class="nav__link">
+            Ремонт и обслуживание
+        </a>
+        <a href="#" class="nav__link">
+            Проекты
+        </a>
+        <a href="#" class="nav__link">
+            О компании
+        </a>
+        <a href="#" class="nav__link">
+            Обучение
+        </a>
+        <a href="#" class="nav__link">
+            Экскурсии
+        </a>
+        <a href="#" class="nav__link">
+            Доставка и оплата
+        </a>
+        <a href="#" class="nav__link">
+            Гарантия и сервис
+        </a>
+        <a href="#" class="nav__link">
+            Контакты
+        </a>
+    </nav>
+
+    <div class="burger__footer">
+        <a href="tel:+79185780884" class="nav__link">
+            +7 (918) 578-08-84
+        </a>
+        <button class="burger__btn">
+            Оставить заявку
+        </button>
+    </div>
+
+    <!-- Подменю Каталог -->
+    <div class="burger__submenu">
+        <button class="submenu__back">Назад</button>
+        <h2 class="submenu__title">
+            Каталог
+        </h2>
+        <a href="#" class="nav__link submenu__line">Категория 1</a>
+        <a href="#" class="nav__link submenu__line">Категория 2</a>
+        <a href="#" class="nav__link submenu__line">Категория 3</a>
+    </div>
+
+</div>
+
+<!--Burger menu-->
+
+<!--Catalog menu-->
+
+<div class="header__catalog-menu">
+    <div class="container">
+        <div class="header__catalog-list">
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Линии</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Печи</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Камеры</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Установки нанесения</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Агрегат химической подготовки</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Аспирация и очистка</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Транспортная система</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Комплектующие и запчасти</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Расходники</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--Catalog menu-->
+
+<!--Catalog menu fixed start-->
+
+<div class="header__catalog-menu__fixed">
+    <div class="container">
+        <div class="header__catalog-list">
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Линии</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Печи</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Камеры</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Установки нанесения</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Агрегат химической подготовки</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Аспирация и очистка</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Транспортная система</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Комплектующие и запчасти</span>
+            </a>
+            <a href="#" class="header__catalog-item">
+                <div class="header__catalog-icon" style="background-image: url(#);"></div>
+                <span class="header__catalog-link">Расходники</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--Catalog menu fixed end-->
+
+<!--Modal form header start-->
+
+<div class="modal__wrapper">
+    <div class="modal__window">
+        <button class="modal__close"></button>
+        <article class="section__article section__article-center lines__article">
+            <h4 class="section__article-subtitle article__subtitle-center">Заказать звонок</h4>
+            <h2 class="section__article-title article__title-center modal__header-title">Свяжемся с вами<br>в течение 5 минут!</h2>
+        </article>
+        <form action="#" class="modal__form">
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="name">Имя</label>
+                <input class="contact__form-input modal__input-black" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="name">Компания</label>
+                <input class="contact__form-input modal__input-black" type="text" id="company" name="company" placeholder="Название компаний" required>
+            </div>
+            <div class="contact__form-group">
+                <label class="contact__form-label modal__label-black" for="phone">Номер</label>
+                <input class="contact__form-input modal__input-black" type="tel" id="phone" name="phone" placeholder="+7 (800) 555 35-55" required>
+            </div>
+            <div class="contact__form-block">
+                <p class="contact__form-privacy modal__privacy-black">
+                    Нажимая на кнопку, <a class="privacy__link modal__privacy-link" href="/privacy">вы даёте согласие на обработку персональных данных.</a>
+                </p>
+            </div>
+            <div class="contact__form-group">
+                <button class="btn btn__arrow contact__form-btn" type="submit">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Modal form header start-->
+
+<!--Header end-->
+
+<!--main start-->
+
+<main class="main">
+
+    <div class="breadcrumb__header">
+        <div class="container">
+            <div class="breadcrumb__header-wrapper">
+                <nav class="breadcrumb__nav">
+                    <a href="#">Главная</a><span> | </span><a href="#">Проекты</a><span> | </span><a href="#">Аскона</a>
+                </nav>
+                <h1 class="breadcrumb__title">
+                    Аскона
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="case__header container">
+
+        <picture class="case__picture">
+            <source media="(max-width: 767px)" srcset="assets/picture/banner_about_example-mob.png">
+            <img src="assets/picture/banner_about_example.png" alt="баннер" class="case__hero--img">
+        </picture>
+    
+        <div class="case__info">
+            <article class="case__article">
+                <h2 class="case__title">О клиенте</h2>
+                <div class="case__article--content">
+                    <p>Компания "Аскона" — ведущий производитель товаров для сна в России, расширяет производственные мощности и запускает участок порошковой окраски металлических элементов. Новый этап развития требует высокотехнологичного и надежного оборудования, способного обеспечить максимальное качество покрытия.</p>
+                </div>
+            </article>
+            <article class="case__article">
+                <h2 class="case__title">Запрос</h2>
+                <div class="case__article--content">
+                    <p>
+                        Ключевыми требованиями заказчика к окрасочному оборудованию являлись:
+                    </p>
+                    <ul>
+                        <li><p>Высокое качество нанесения покрытия;</p></li>
+                        <li><p>Производительность и безопасность;</p></li>
+                        <li><p>Надежность и долговечность работы;</p></li>
+                        <li><p>Комплексное сервисное обслуживание и постпродажная поддержка.</p></li>
+                    </ul>
+                    <p>
+                        Для реализации проекта требовался индивидуальный подход и инженерное сопровождение на всех этапах.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="case__content">
+            <div class="case__content--container">
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, pariatur dolor iste eos nihil voluptas recusandae labore qui nostrum id!</p>
+            </div>
+        </div>
+
+        <iframe 
+            src="https://vkvideo.ru/video_ext.php?oid=-19232159&id=456249791&hd=2&autoplay=1"
+            allow="autoplay;
+            encrypted-media;
+            fullscreen;
+            picture-in-picture;
+            screen-wake-lock;"
+            allowfullscreen
+            class="case__video--frame"
+        >
+        </iframe>
+
+        <div class="basic-payment">
+            <div class="basic__article">
+
+                <article class="section__article section__article-center">
+                    <h4 class="section__article-subtitle article__subtitle-center">Отзыв</h4>
+                    <h2 class="section__article-title article__title-center">Отзыв</h2>
+                </article>
+
+            </div>
+
+            <div class="case__comment">
+
+                <div class="basic__comment-block">
+                    <div class="basic__comment-wrapper">
+                        <img src="assets/picture/user_example.png" alt="Фото начальника актек" class="basic__comment-img">
+                    </div>
+                    <div class="basic__comment-header">
+                        <h5 class="basic__comment-name">Имя Фамилия</h5>
+                        <p class="basic__comment-rank">Начальник производства</p>
+                    </div>
+                </div>
+
+                <p class="case__comment--text">
+                    История компании АКТЭК - это яркий пример того, как высокое мастерство и профессионализм воплощаются в выдающуюся идею! Начав свою деятельность в 2016 году, компания быстро заняла достойное место в индустрии порошковой окраски, блестяще реализовав собственные инженерные решения и создав востребованное оборудование.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="case__recomendation">
+            <article class="section__article section__article-center">
+                <h2 class="section__article-title article__title-center">Другие этапы</h2>
+            </article>
+
+            <div class="case__list">
+
+                <a href="#" class="case__item">
+                    <div class="case__wallpaper">
+                        <img src="assets/picture/product_example.png" alt="заставка кейса" class="case__img">
+                    </div>
+                    <article class="case__article">
+                        <h3 class="case__title">Транспортные эстакады</h3>
+                    </article>
+                </a>
+        
+                <a href="#" class="case__item">
+                    <div class="case__wallpaper">
+                        <img src="assets/picture/product_example.png" alt="заставка кейса" class="case__img">
+                    </div>
+                    <article class="case__article">
+                        <h3 class="case__title">Камеры нанесения</h3>
+                    </article>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<!--main end-->
+
+<!--footer start-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__block footer__info">
+
+            <div class="footer__info-block">
+                <h2 class="footer__nav-title">
+                    Каталог
+                </h2>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link nav__link">Печи</a>
+                    <a href="#" class="footer__link nav__link">Камеры</a>
+                    <a href="#" class="footer__link nav__link">Установки нанесения</a>
+                    <a href="#" class="footer__link nav__link">Аспирация и очистка</a>
+                    <a href="#" class="footer__link nav__link">Комплектующие и запчасти</a>
+                    <a href="#" class="footer__link nav__link">Расходники</a>
+                </nav>
+            </div>
+    
+            <div class="footer__info-block">
+                <h2 class="footer__nav-title">
+                    Услуги
+                </h2>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link nav__link">Производство линий</a>
+                    <a href="#" class="footer__link nav__link">Порошковая окраска</a>
+                    <a href="#" class="footer__link nav__link">Гарантия и сервис</a>
+                </nav>
+            </div>
+    
+            <div class="footer__info-block">
+                <h2 class="footer__nav-title">
+                    Навигация
+                </h2>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link nav__link">Проекты</a>
+                    <a href="#" class="footer__link nav__link">О компаний</a>
+                    <a href="#" class="footer__link nav__link">Обучение</a>
+                    <a href="#" class="footer__link nav__link">Экскурсии</a>
+                    <a href="#" class="footer__link nav__link">Доставка и оплата</a>
+                    <a href="#" class="footer__link nav__link">Контакты</a>
+                </nav>
+            </div>
+    
+            <div class="footer__info-block">
+                <h2 class="footer__nav-title">
+                    Медиа
+                </h2>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link nav__link">Мы в Дзене</a>
+                    <a href="#" class="footer__link nav__link">Мы в ВКонтакте</a>
+                </nav>
+            </div>
+    
+            <div class="footer__contact">
+                <div class="footer__contact-block">
+                    <a href="tel:+79185780884" class="footer__link nav__link">+7 (918) 578-08-84 для Москвы</a>
+                    <a href="tel:+79185780884" class="footer__link nav__link">+7 (918) 578-08-84 для России</a>
+                    <a href="tel:+79185780884" class="footer__link nav__link">Заказать звонок</a>
+                </div>
+                <div class="footer__contact-block">
+                    <a href="mailto:it@vbrand.ru" class="footer__link nav__link">hello@mail.ru</a>
+                    <a href="mailto:it@vbrand.ru" class="footer__link nav__link">Написать</a>
+                </div>
+                <div class="footer__contact-block">
+                    <a href="#" class="footer__link nav__link clr__yellow">Политика конфиденциальности</a>
+                    <a href="#" class="footer__link nav__link clr__yellow">Публичная оферта</a>
+                </div>
+            </div>
+    
+        </div>
+        <div class="footer__block footer__logo">
+            <a href="/" class="footer__logo-link">
+                <img src="assets/ui/logo_big.svg" alt="logo" class="footer__logo-img">
+            </a>
+        </div>
+        <div class="footer__block footer__copyright">
+            <p class="footer__copyright-text">
+                © Актэк. 2024 Все права защищены
+            </p>
+            <a class="footer__copyright-text nav__link" href="https://vbrand.ru" target="_blank">
+                Сайт разработан маркетинговым-агентством V-Brand
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!--footer end-->
+</body>
+</html>
